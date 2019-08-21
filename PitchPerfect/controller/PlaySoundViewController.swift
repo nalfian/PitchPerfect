@@ -40,11 +40,26 @@ class PlaySoundViewController: UIViewController {
     }
 
     @IBAction func playButton(_ sender: UIButton) {
-        print("Play")
+        switch (ButtonType(rawValue: sender.tag)!) {
+        case .slow:
+            playSound(rate: 0.5)
+        case .fast:
+            playSound(rate: 1.5)
+        case .rabbit:
+            playSound(pitch: 1000)
+        case .rader:
+            playSound(pitch: -1000)
+        case .echo:
+            playSound(echo: true)
+        case .reverb:
+            playSound(reverb: true)
+        }
+        
+        configureUI(.playing)
     }
 
     @IBAction func stopButton(_ sender: AnyObject) {
-        print("Stop")
+        stopAudio()
     }
     
 }
