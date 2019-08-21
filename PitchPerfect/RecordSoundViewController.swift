@@ -1,5 +1,3 @@
-//
-//  ViewController.swift
 //  PitchPerfect
 //
 //  Created by Unknown on 20/08/19.
@@ -49,7 +47,7 @@ class RecordSoundViewController: UIViewController {
         try! session.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
         
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
-        audioRecorder.isMeteringEnabled
+        audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
         
@@ -59,6 +57,10 @@ class RecordSoundViewController: UIViewController {
         recordLabel.text = "Tap to Record"
         recordButton.isEnabled = true
         stopRecord.isEnabled = false
+        
+        audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
     }
     
 }
