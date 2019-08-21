@@ -54,14 +54,22 @@
 		4C15648C230B7EE40005FBB3 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
+				4C40F291230D79320071E6E4 /* controller */,
 				4C15648D230B7EE40005FBB3 /* AppDelegate.swift */,
-				4C15648F230B7EE40005FBB3 /* RecordSoundViewController.swift */,
 				4C156491230B7EE40005FBB3 /* Main.storyboard */,
 				4C156494230B7EE60005FBB3 /* Assets.xcassets */,
 				4C156496230B7EE60005FBB3 /* LaunchScreen.storyboard */,
 				4C156499230B7EE60005FBB3 /* Info.plist */,
 			);
 			path = PitchPerfect;
+			sourceTree = "<group>";
+		};
+		4C40F291230D79320071E6E4 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C15648F230B7EE40005FBB3 /* RecordSoundViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
