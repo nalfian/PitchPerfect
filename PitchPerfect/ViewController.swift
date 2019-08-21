@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var recordLabel: UILabel!
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var stopRecord: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        stopRecord.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,10 +31,14 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(_ sender: Any) {
         recordLabel.text = "Record in Progress"
+        recordButton.isEnabled = false
+        stopRecord.isEnabled = true
     }
     
     @IBAction func stopRecord(_ sender: Any) {
         recordLabel.text = "Tap to Record"
+        recordButton.isEnabled = true
+        stopRecord.isEnabled = false
     }
     
 }
