@@ -13,6 +13,7 @@
 		4C156495230B7EE60005FBB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C156494230B7EE60005FBB3 /* Assets.xcassets */; };
 		4C156498230B7EE60005FBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C156496230B7EE60005FBB3 /* LaunchScreen.storyboard */; };
 		4C40F293230D7D990071E6E4 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C40F292230D7D990071E6E4 /* PlaySoundViewController.swift */; };
+		4C40F297230D924C0071E6E4 /* PlaySoundViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C40F296230D924C0071E6E4 /* PlaySoundViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4C156497230B7EE60005FBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C156499230B7EE60005FBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C40F292230D7D990071E6E4 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
+		4C40F296230D924C0071E6E4 /* PlaySoundViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4C15648C230B7EE40005FBB3 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
+				4C40F295230D923A0071E6E4 /* extension */,
 				4C40F291230D79320071E6E4 /* controller */,
 				4C15648D230B7EE40005FBB3 /* AppDelegate.swift */,
 				4C156491230B7EE40005FBB3 /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				4C40F292230D7D990071E6E4 /* PlaySoundViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		4C40F295230D923A0071E6E4 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4C40F296230D924C0071E6E4 /* PlaySoundViewController+Audio.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C156490230B7EE40005FBB3 /* RecordSoundViewController.swift in Sources */,
+				4C40F297230D924C0071E6E4 /* PlaySoundViewController+Audio.swift in Sources */,
 				4C40F293230D7D990071E6E4 /* PlaySoundViewController.swift in Sources */,
 				4C15648E230B7EE40005FBB3 /* AppDelegate.swift in Sources */,
 			);
